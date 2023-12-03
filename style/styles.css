@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color:grey;
+  }
+  
+  body {
+    background-color: #fff;
+    padding: 0 1rem 0 1rem;
+    margin: 0 auto 0 auto;
+    max-width: 800px;
+    min-width: 300px;
+  
+  }
+  
+  .header-wrapper {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+  }
+  
+  h1 {
+    background-color: beige;
+  }
+  
+  .navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: red;
+    min-width: 400px;
+    display: flex;
+   justify-content: flex-start;
+  }
+  
+   nav > ul {
+    list-style: none;
+  }
+  
+  nav > ul > li {
+  
+  }
+  
+  ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    padding: 0 0.5rem;
+    background-color: white;
+  }
+  
+  .product-img {
+    width: 100px;
+  }
+  
+  .products-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .product-item {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  
+  
+  footer {
+    background-color: #000;
+    min-height: 100px;
+    margin-top: 4rem;
+  }
+  
+  
+  @media only screen and (max-width:600px) {
+    .header-wrapper {
+      flex-direction: column;
+    }
+
+    ul > li > a {
+      font-size: 1rem;
+      transition: 1s;
+    }
+  
+    .product-item {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+      .title {
+    text-align: center;
+  }
+
+      .products-list {
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (max-width:400px) {
+    .header-wrapper {
+      justify-content: center;
+    }
+
+    .logo-wrapper {
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+    }
+    
+      .products-list {
+      flex-direction: column;
+    }
+
+    h1 {
+      margin:0;
+    }
+  }
